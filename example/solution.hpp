@@ -5,9 +5,7 @@
 #ifndef SOLU_SOL_HPP_
 #define SOLU_SOL_HPP_
 
-#include <algorithm>
-#include <string>
-#include <unordered_map>
+// include header
 
 class Solution {
    public:
