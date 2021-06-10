@@ -10,11 +10,7 @@
 class Solution {
    public:
     // overloading operator()
-<<<<<<< HEAD
     bool operator()(const int& x) { return isPalindrome(x); }
-=======
-    // int operator()(int i,int j);
->>>>>>> e2946796342d86ae54ccf2f7406f94d85930c322
 
     // function()
     bool isPalindrome(int x) {
