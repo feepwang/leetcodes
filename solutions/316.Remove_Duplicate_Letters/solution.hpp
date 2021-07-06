@@ -17,7 +17,7 @@ class Solution {
     // function()
     string removeDuplicateLetters(string s) {
         string stk;
-        for (const auto& c : s) {
+        for (size_t i = 0; i < s.size(); ++i) {
             if (stk.find(s[i]) != string::npos) continue;
             while (!stk.empty() && stk.back() > s[i] &&
                    s.find(stk.back(), i) != string::npos)

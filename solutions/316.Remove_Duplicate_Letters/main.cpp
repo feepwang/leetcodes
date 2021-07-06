@@ -7,7 +7,6 @@ int main() {
     Solution s;
 
     // print result of solution.
-    string str{"bcabc"};
-    cout << s(str) << endl;
+    cout << s("bcabc") << endl;
     cout << endl;
 }
