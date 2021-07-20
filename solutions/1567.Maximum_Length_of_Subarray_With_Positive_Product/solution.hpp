@@ -17,7 +17,23 @@ class Solution {
     // int operator()(int i,int j);
 
     // function()
-    int getMaxLen(vector<int>& nums) {}
+    int getMaxLen(vector<int>& nums) {
+        int ans = 0;
+        int posi = 0, nega = 0;
+        for (const int& i : nums) {
+            if (i > 0) {
+                posi++;
+                nega = nega > 0 ? nega + 1 : 0;
+            } else if (i < 0) {
+                int tmp = nega;
+                nega = posi + 1;
+                posi = tmp > 0 ? tmp + 1 : 0;
+            } else
+                posi = 0, nega = 0;
+            ans = max(ans, posi);
+        }
+        return ans;
+    }
 };
 
 #endif
