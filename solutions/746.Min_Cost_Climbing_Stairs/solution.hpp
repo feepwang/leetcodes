@@ -18,15 +18,13 @@ class Solution {
 
     // function()
     int minCostClimbingStairs(vector<int>& cost) {
-        int val1 = 0, val2 = 0;
-        int i = 2, sz = cost.size();
-        int tmp = 0;
-        while (i++ < sz) {
-            tmp = val2;
-            val2 = min(val1 + cost[i - 2], val2 + cost[i - 1]);
-            val1 = tmp;
+        int first{}, second{};
+        for (int sz = cost.size(), tmp{}, pos{2}; pos <= sz; ++pos) {
+            tmp = second;
+            second = min(first + cost[pos - 2], second + cost[pos - 1]);
+            first = tmp;
         }
-        return val2;
+        return second;
     }
 };
 
