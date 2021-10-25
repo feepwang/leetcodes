@@ -18,17 +18,13 @@ class Solution {
 
     // function()
     bool canJump(vector<int>& nums) {
-        int n = nums.size();
-        int rightmost = 0;
-        for (int i = 0; i < n; ++i) {
-            if (i <= rightmost) {
-                rightmost = max(rightmost, i + nums[i]);
-                if (rightmost >= n - 1) {
-                    return true;
-                }
-            }
+        auto sz = nums.size();
+
+        for (int i = 0, right = 0; i < sz; ++i) {
+            if (i > right) return false;
+            right = max(right, i + nums[i]);
         }
-        return false;
+        return true;
     }
 };
 
