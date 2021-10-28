@@ -19,15 +19,16 @@ class Solution {
 
     // function()
     int maxProduct(vector<int>& nums) {
-        int ma = nums[0], mi = ma;
-        int result = ma;
-        for (int i = 1, sz = nums.size(); i < sz; i++) {
-            int tmp = nums[i];
-            ma = max({tmp, ma * tmp, mi * tmp});
-            mi = min({tmp, ma * tmp, mi * tmp});
-            result = max(result, ma);
+        int ma{nums[0]}, mi{nums[0]}, res{nums[0]};
+
+        for (int i = 1; i < nums.size(); ++i) {
+            int tmp = ma, n = nums[i];
+            ma = max({n, n * ma, n * mi});
+            mi = min({n, n * tmp, n * mi});
+            res = max(res, ma);
         }
-        return result;
+
+        return res;
     }
 };
 

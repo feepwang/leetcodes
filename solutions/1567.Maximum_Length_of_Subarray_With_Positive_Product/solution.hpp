@@ -14,25 +14,26 @@ using std::vector;
 class Solution {
    public:
     // overloading operator()
-    // int operator()(int i,int j);
+    int operator()(vector<int>& nums) { return getMaxLen(nums); }
 
     // function()
     int getMaxLen(vector<int>& nums) {
-        int ans = 0;
-        int posi = 0, nega = 0;
-        for (const int& i : nums) {
+        int result{}, pos{}, neg{};
+        for (auto i : nums) {
             if (i > 0) {
-                posi++;
-                nega = nega > 0 ? nega + 1 : 0;
+                ++pos;
+                neg = neg ? neg + 1 : 0;
             } else if (i < 0) {
-                int tmp = nega;
-                nega = posi + 1;
-                posi = tmp > 0 ? tmp + 1 : 0;
-            } else
-                posi = 0, nega = 0;
-            ans = max(ans, posi);
+                int tmp = neg;
+                neg = pos + 1;
+                pos = tmp ? tmp + 1 : 0;
+            } else {
+                pos = 0;
+                neg = 0;
+            }
+            result = max(result, pos);
         }
-        return ans;
+        return result;
     }
 };
 
