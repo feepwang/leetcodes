@@ -7,9 +7,10 @@
 
 // include header
 #include <algorithm>
+#include <vector>
+
 using std::max;
 using std::min;
-#include <vector>
 using std::vector;
 
 class Solution {
