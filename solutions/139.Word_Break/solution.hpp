@@ -15,13 +15,8 @@
 #define SOLU_SOL_HPP_
 
 // include header
-<<<<<<< HEAD
-#include <set>
-#include <string>
-=======
 #include <string>
 #include <unordered_set>
->>>>>>> test
 #include <vector>
 
 class Solution {
@@ -33,16 +28,10 @@ class Solution {
 
     // function()
     bool wordBreak(std::string s, std::vector<std::string>& wordDict) {
-<<<<<<< HEAD
-        std::set<std::string> wordDictSet(wordDict.begin(), wordDict.end());
-
-        std::set<size_t> true_poses{0};
-=======
         std::unordered_set<std::string> wordDictSet(wordDict.begin(),
                                                     wordDict.end());
 
         std::unordered_set<size_t> true_poses{0};
->>>>>>> test
         auto sz = s.size();
         for (size_t i = 1; i <= sz; ++i) {
             for (auto j : true_poses) {
