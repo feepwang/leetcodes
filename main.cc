@@ -1,7 +1,7 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "118.Pascal's_Triangle.hpp"
+#include "119.Pascal's_Triangle_Ⅱ.hpp"
 
 int main() {
     using std::cout;
@@ -10,11 +10,8 @@ int main() {
     lc::Solution s;
 
     // print result of solution.
-    for (const auto& veci : s(5)) {
-        for (auto i : veci) {
-            cout << i << " ";
-        }
-        cout << endl;
+    for (auto i : s(3)) {
+        cout << i << " ";
     }
 
     cout << endl;
