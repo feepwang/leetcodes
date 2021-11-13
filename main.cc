@@ -1,7 +1,7 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "119.Pascal's_Triangle_Ⅱ.hpp"
+#include "520.Detect_Capital.hpp"
 
 int main() {
     using std::cout;
@@ -10,9 +10,10 @@ int main() {
     lc::Solution s;
 
     // print result of solution.
-    for (auto i : s(3)) {
-        cout << i << " ";
-    }
+    if (s("USA"))
+        cout << "true";
+    else
+        cout << "false";
 
     cout << endl;
 }
