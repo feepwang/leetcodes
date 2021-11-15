@@ -1,7 +1,7 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "520.Detect_Capital.hpp"
+#include "319.Bulb_Switcher.hpp"
 
 int main() {
     using std::cout;
@@ -10,10 +10,7 @@ int main() {
     lc::Solution s;
 
     // print result of solution.
-    if (s("USA"))
-        cout << "true";
-    else
-        cout << "false";
+    cout << s(3);
 
     cout << endl;
 }
