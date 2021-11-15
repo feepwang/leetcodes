@@ -34,8 +34,10 @@
 # CMake Relative Files
 build
 
+# Visual Studio Code build dir
 .vscode
-
 .cache
+
+# Visual Studio build dir
 /CMakeSettings.json
 /.vs
