@@ -1,7 +1,7 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "931.Minimum_Falling_Path_Sum.hpp"
+#include "120.Triangle.hpp"
 
 int main() {
     using std::cout;
@@ -9,10 +9,8 @@ int main() {
 
     lc::Solution s;
 
-    std::vector<std::vector<int>> t {
-        {2, 1, 3}, {6, 5, 4}, { 7, 8, 9 }
+    std::vector<std::vector<int>> t{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}
     };
-
 
     //  print result of solution.
     //  cout << s(3);
