@@ -1,7 +1,7 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "120.Triangle.hpp"
+#include "1292.Maximum_Side_Length_of_a_Square_with_Sum_Less_than_or_Equal_to_Threshold.hpp"
 
 int main() {
     using std::cout;
@@ -9,11 +9,10 @@ int main() {
 
     lc::Solution s;
 
-    std::vector<std::vector<int>> t{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}
-    };
+    std::vector<std::vector<int>> t{
+        {1, 1, 3, 2, 4, 3, 2}, {1, 1, 3, 2, 4, 3, 2}, {1, 1, 3, 2, 4, 3, 2}};
 
-    //  print result of solution.
-    //  cout << s(3);
-    cout << s(t);
+    //  output
+    cout << s(t, 4);
     cout << endl;
 }
