@@ -1,7 +1,7 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "1292.Maximum_Side_Length_of_a_Square_with_Sum_Less_than_or_Equal_to_Threshold.hpp"
+#include "1314.Matrix_Block_Sum.hpp"
 
 int main() {
     using std::cout;
@@ -9,10 +9,14 @@ int main() {
 
     lc::Solution s;
 
-    std::vector<std::vector<int>> t{
-        {1, 1, 3, 2, 4, 3, 2}, {1, 1, 3, 2, 4, 3, 2}, {1, 1, 3, 2, 4, 3, 2}};
+    std::vector<std::vector<int>> t{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
     //  output
-    cout << s(t, 4);
+    for (auto v : s(t, 1)) {
+        for (auto i : v) {
+            cout << i << " ";
+        }
+        cout << endl;
+    };
     cout << endl;
 }
