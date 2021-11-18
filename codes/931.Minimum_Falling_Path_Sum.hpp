@@ -8,9 +8,9 @@
  * Specifically, the next element from position (row, col) will be (row + 1, col
  * - 1), (row + 1, col), or (row + 1, col + 1).
  *
- * À´Ô´£ºÁ¦¿Û£¨LeetCode£©
- * Á´½Ó£ºhttps://leetcode-cn.com/problems/minimum-falling-path-sum
- * Öø×÷È¨¹éÁì¿ÛÍøÂçËùÓĞ¡£ÉÌÒµ×ªÔØÇëÁªÏµ¹Ù·½ÊÚÈ¨£¬·ÇÉÌÒµ×ªÔØÇë×¢Ã÷³ö´¦¡£
+ * æ¥æºï¼šåŠ›æ‰£ï¼ˆLeetCodeï¼‰
+ * é“¾æ¥ï¼šhttps://leetcode-cn.com/problems/minimum-falling-path-sum
+ * è‘—ä½œæƒå½’é¢†æ‰£ç½‘ç»œæ‰€æœ‰ã€‚å•†ä¸šè½¬è½½è¯·è”ç³»å®˜æ–¹æˆæƒï¼Œéå•†ä¸šè½¬è½½è¯·æ³¨æ˜å‡ºå¤„ã€‚
  */
 
 #ifndef LC_SOLUTION_HPP_

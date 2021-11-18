@@ -6,9 +6,9 @@
  * formally, if you are on index i on the current row, you may move to either
  * index i or index i + 1 on the next row.
  *
- * À´Ô´£ºÁ¦¿Û£¨LeetCode£©
- * Á´½Ó£ºhttps://leetcode-cn.com/problems/triangle
- * Öø×÷È¨¹éÁì¿ÛÍøÂçËùÓĞ¡£ÉÌÒµ×ªÔØÇëÁªÏµ¹Ù·½ÊÚÈ¨£¬·ÇÉÌÒµ×ªÔØÇë×¢Ã÷³ö´¦¡£
+ * æ¥æºï¼šåŠ›æ‰£ï¼ˆLeetCodeï¼‰
+ * é“¾æ¥ï¼šhttps://leetcode-cn.com/problems/triangle
+ * è‘—ä½œæƒå½’é¢†æ‰£ç½‘ç»œæ‰€æœ‰ã€‚å•†ä¸šè½¬è½½è¯·è”ç³»å®˜æ–¹æˆæƒï¼Œéå•†ä¸šè½¬è½½è¯·æ³¨æ˜å‡ºå¤„ã€‚
  */
 
 #ifndef LC_SOLUTION_HPP_
