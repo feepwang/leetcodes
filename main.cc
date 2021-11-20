@@ -1,20 +1,17 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "304.Range_Sum_Query_2D-Immutable.hpp"
+#include "594.Longest_Harmonious_Subsequence.hpp"
 
 int main() {
     using std::cout;
     using std::endl;
 
-    std::vector<std::vector<int>> nums{
-        {3, 0, 1, 4, 2}, {5, 6, 3, 2, 1}, {1, 2, 0, 1, 5}, {4, 1, 0, 1, 7},
-        {1, 0, 3, 0, 5}};
+    lc::Solution s;
 
-    lc::NumMatrix nm{nums};
+    std::vector<int> nums{1, 3, 2, 2, 5, 2, 3, 7};
     
     //  output
-    cout << nm.sumRegion(2, 1, 4, 3) << " " << nm.sumRegion(1, 1, 2, 2) << " "
-         << nm.sumRegion(1,2,2,4);
+    cout << s(nums);
     cout << endl;
 }
