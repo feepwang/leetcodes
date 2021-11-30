@@ -1,21 +1,15 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "384.Shuffle_an_Array.hpp"
+#include "400.Nth_Digit.hpp"
 
 int main() {
     using std::cout;
     using std::endl;
 
-    lc::Solution s({1, 2, 3});
+    lc::Solution s;
 
     //  output
-    std::cout << s;
-    s.shuffle();
-    std::cout << s;
-    s.reset();
-    std::cout << s;
-    s.shuffle();
-    std::cout << s;
+    cout << s(1);
     cout << endl;
 }

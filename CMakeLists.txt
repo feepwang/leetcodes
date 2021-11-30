@@ -7,4 +7,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(codes)
 
-add_executable(sol main.cc)
+add_executable(sol main.cc )
