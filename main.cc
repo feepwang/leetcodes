@@ -1,17 +1,16 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "419.Battleships_in_a_Board.hpp"
+#include "377.Combination_Sum_IV.hpp"
 
 int main() {
     using std::cout;
     using std::endl;
 
     lc::Solution s;
-    std::vector<std::vector<char>> board{
-        {'X', '.', '.', 'X'}, {'.', '.', '.', 'X'}, {'.', '.', '.', 'X'}};
+    std::vector<int> nums{1, 2, 3};
 
     //  output
-    cout << s(board);
+    cout << s(nums, 4);
     cout << endl;
 }
