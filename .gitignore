@@ -41,3 +41,4 @@ build
 # Visual Studio build dir
 /CMakeSettings.json
 /.vs
+CMakeLists.txt
