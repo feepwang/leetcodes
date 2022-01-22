@@ -1,16 +1,15 @@
 #include <iostream>
 
 //  #include "${SOLUTION_HPP}"
-#include "1716.Calculate_Memory_in_Leetcode_Bank.hpp"
+#include "1332.Remove_Palindromic_Subsequences.hpp"
 
 int main() {
     using std::cout;
     using std::endl;
 
     lc::Solution s;
-    
 
     //  output
-    cout << s(10);
+    cout << s("ababa");
     cout << endl;
 }
