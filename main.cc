@@ -1,14 +1,15 @@
-#include <553.Optimal_Division.hpp>
 #include <iostream>
-#include <vector>
+
+#include "2100.Find_Good_Days_to_Rob_the_Bank.hpp"
 
 int main() {
     using namespace std;
 
     lc::Solution sol{};
+    std::vector<int> security{5, 3, 3, 3, 5, 6, 2};
 
-    std::vector<int> nums{1000, 100, 10, 2};
-
-    cout << sol(nums);
+    for (auto i : sol(security, 2)) {
+        cout << i << " ";
+    }
     cout << endl;
 }
