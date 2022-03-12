@@ -1,12 +1,12 @@
-#include <2104.Sum_of_Subarray_Ranges.hpp>
 #include <iostream>
+
+#include "258.Add_Digits.hpp"
 
 int main() {
     using namespace std;
 
     lc::Solution sol{};
-    std::vector<int> nums{1, 2, 3};
 
-    cout << sol(nums);
+    cout << sol(38);
     cout << endl;
 }
