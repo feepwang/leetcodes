@@ -1,13 +1,13 @@
 #include <iostream>
 
-#include "2044.Count_Number_of_Maximum_Bitwise-OR_Subsets.hpp"
+#include "720.Longest_Word_in_Dictionary.hpp"
 
 int main() {
     using namespace std;
 
     lc::Solution sol{};
-    std::vector<int> nums{13, 1};
+    vector<string> words{"w", "wo", "wor", "worl", "world"};
 
-    cout << sol(nums) << endl;
+    cout << sol(words) << endl;
     cout << endl;
 }
