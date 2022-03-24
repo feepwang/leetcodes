@@ -1,15 +1,19 @@
 #include <iostream>
 
-#include "2038.Remove_Colored_Pieces_if_Both_Neighbors_are_the_Same_Color.hpp"
+#include "661.Image_Smoother.hpp"
 
 int main() {
     using namespace std;
 
     lc::Solution sol{};
 
-    if (sol("AAABABB"))
-        cout << "Alice wins" << endl;
-    else
-        cout << "Bob wins" << endl;
+    vector<vector<int>> img{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+
+    for (auto v : sol(img)) {
+        for (auto i : v) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
     cout << endl;
 }
