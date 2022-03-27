@@ -1,19 +1,15 @@
 #include <iostream>
 
-#include "661.Image_Smoother.hpp"
+#include "2028.Find_Missing_Observations.hpp"
 
 int main() {
     using namespace std;
 
     lc::Solution sol{};
+    vector<int> rolls{3, 2, 4, 3};
 
-    vector<vector<int>> img{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
-
-    for (auto v : sol(img)) {
-        for (auto i : v) {
-            cout << i << " ";
-        }
-        cout << endl;
+    for (auto& i : sol(rolls, 4, 2)) {
+        cout << i << ' ';
     }
     cout << endl;
 }
