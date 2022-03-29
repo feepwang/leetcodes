@@ -1,15 +1,16 @@
 #include <iostream>
 
-#include "2028.Find_Missing_Observations.hpp"
+#include "693.Binary_Number_with_Alternating_Bits.hpp"
 
 int main() {
     using namespace std;
 
     lc::Solution sol{};
-    vector<int> rolls{3, 2, 4, 3};
 
-    for (auto& i : sol(rolls, 4, 2)) {
-        cout << i << ' ';
+    if (sol(5)) {
+        cout << "true" << endl;
+    } else {
+        cout << "false" << endl;
     }
     cout << endl;
 }
