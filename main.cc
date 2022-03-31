@@ -1,16 +1,14 @@
 #include <iostream>
 
-#include "693.Binary_Number_with_Alternating_Bits.hpp"
+#include "728.Self_Dividing_Numbers.hpp"
 
 int main() {
     using namespace std;
 
     lc::Solution sol{};
 
-    if (sol(5)) {
-        cout << "true" << endl;
-    } else {
-        cout << "false" << endl;
+    for (auto i : sol(1, 22)) {
+        cout << i << ' ';
     }
     cout << endl;
 }
