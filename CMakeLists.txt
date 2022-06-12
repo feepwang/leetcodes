@@ -8,3 +8,4 @@ set_target_properties(out PROPERTIES
                             CMAKE_CXX_STANDARD 17
                             CMAKE_CXX_STANDARD_REQUIRED on
                             CMAKE_CXX_EXTENSIONS on)
+target_include_directories(out PUBLIC codes)
