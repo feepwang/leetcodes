@@ -41,3 +41,5 @@ build
 # Visual Studio build dir
 /CMakeSettings.json
 /.vs
+/.idea
+/cmake-build-debug-visual-studio
