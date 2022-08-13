@@ -3,11 +3,15 @@
 # You can learn more about editorconfig here: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
 root = true
 
+[*.*]
 charset = utf-8
-
-[*.cs]
-
-[*.{c,h,cpp,cc,hpp}]
 indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{c++,cc,cpp,cppm,cxx,h,h++,hh,hpp,hxx,inl,ipp,ixx,tlh,tli}]
 indent_size = 4
-tab_width = 4
+
+# Visual C++ 代码样式设置
+
+cpp_generate_documentation_comments = doxygen_slash_star
