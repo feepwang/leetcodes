@@ -1,16 +1,17 @@
 #include <iostream>
+#include <thread>
 
-#include <442.Find_All_Duplicates_in_an_Array.hpp>
+#include "1115.Print_FooBar_Alternatiely.hpp"
 
 int main() {
     using namespace std;
 
-    lc::Solution sol{};
+    lc::FooBar fb{10};
 
-    vector<int> nums{4, 3, 2, 7, 8, 2, 3, 1};
+    thread t1{[&fb]() { fb.foo([]() { cout << "foo"; }); }};
+    thread t2([&fb]() { fb.bar([]() { cout << "bar"; }); });
 
-    for(auto i : sol(nums)) {
-        cout << i << " ";
-    }
-    cout << endl;
+    t1.join();
+    t2.join();
+    cout << std::endl;
 }
