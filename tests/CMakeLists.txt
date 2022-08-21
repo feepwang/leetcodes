@@ -1,0 +1,3 @@
+link_libraries(gtest gtest_main)
+
+add_executable(1115.print_foobar_alternatively_test print_foobar_alternatively_test.cc)

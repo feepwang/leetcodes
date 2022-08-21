@@ -2,10 +2,15 @@ cmake_minimum_required(VERSION 3.15)
 
 project(lc CXX)
 
-add_executable(out main.cc)
+enable_testing()
 
-set_target_properties(out PROPERTIES
-                            CMAKE_CXX_STANDARD 17
-                            CMAKE_CXX_STANDARD_REQUIRED on
-                            CMAKE_CXX_EXTENSIONS on)
-target_include_directories(out PUBLIC codes)
+set(CMAKE_CXX_STANDARD  14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+include_directories(codes)
+
+add_subdirectory(dep/googletest)
+add_subdirectory(tests)
+
+add_executable(out main.cc)

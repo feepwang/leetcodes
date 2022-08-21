@@ -1,0 +1,4 @@
+[submodule "dep/googletest"]
+	path = dep/googletest
+	url = https://github.com/google/googletest.git
+	branch = tags/release-1.12.1
