@@ -11,6 +11,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 include_directories(codes)
 
 add_subdirectory(dep/googletest)
+find_package(GTest)
 add_subdirectory(tests)
 
 add_executable(out main.cc)

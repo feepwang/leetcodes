@@ -37,6 +37,7 @@ build
 # Visual Studio Code build dir
 .vscode
 .cache
+Testing
 
 # Visual Studio build dir
 /CMakeSettings.json
