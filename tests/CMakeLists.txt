@@ -1,4 +1,4 @@
-link_libraries(gtest gtest_main)
+link_libraries(GTest::gtest_main)
 
 add_executable(1115.print_foobar_alternatively_test 1115.print_foobar_alternatively_test.cc)
 add_executable(1455.Check_If_a_Word_Occurs_As_a_Prefix_of_Any_Word_in_a_Sentence 1455.Check_If_a_Word_Occurs_As_a_Prefix_of_Any_Word_in_a_Sentence.cc)

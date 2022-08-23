@@ -10,7 +10,7 @@ using std::endl;
 using std::string;
 using std::thread;
 
-TEST(lc, One) {
+TEST(lc, 1115_ONE) {
     string str{};
 
     lc::FooBar fb{1};
@@ -23,7 +23,7 @@ TEST(lc, One) {
     ASSERT_STREQ(str.c_str(), "foobar");
 }
 
-TEST(lc, Two) {
+TEST(lc, 1115_Two) {
     string str{};
 
     lc::FooBar fb{2};
@@ -36,7 +36,7 @@ TEST(lc, Two) {
     ASSERT_STREQ(str.c_str(), "foobarfoobar");
 }
 
-TEST(lc, Ten) {
+TEST(lc, 1115_Ten) {
     string str{};
 
     lc::FooBar fb{10};
@@ -48,4 +48,9 @@ TEST(lc, Ten) {
     t2.join();
     ASSERT_STREQ(str.c_str(), "foobarfoobarfoobarfoobarfoobar"
                               "foobarfoobarfoobarfoobarfoobar");
+}
+
+int main(int argc, char** argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
