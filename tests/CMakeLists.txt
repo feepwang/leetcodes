@@ -4,5 +4,7 @@ add_executable(1115.print_foobar_alternatively_test 1115.print_foobar_alternativ
 add_executable(1455.Check_If_a_Word_Occurs_As_a_Prefix_of_Any_Word_in_a_Sentence 1455.Check_If_a_Word_Occurs_As_a_Prefix_of_Any_Word_in_a_Sentence.cc)
 gtest_discover_tests(
         1115.print_foobar_alternatively_test
+)
+gtest_discover_tests(
         1455.Check_If_a_Word_Occurs_As_a_Prefix_of_Any_Word_in_a_Sentence
 )
