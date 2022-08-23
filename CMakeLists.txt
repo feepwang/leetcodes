@@ -23,6 +23,7 @@ if (NOT ${GTest_FOUND})
     include(GoogleTest)
 endif ()
 
+enable_testing()
 include_directories(codes)
 
 add_subdirectory(tests)
