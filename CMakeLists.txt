@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+include(CTest)
+
 find_package(GTest QUIET)
 if (NOT ${GTest_FOUND})
     message(STATUS "GTest NOT FOUND IN SYSTEM ENVIRONMENT")
@@ -23,9 +25,6 @@ if (NOT ${GTest_FOUND})
     include(GoogleTest)
 endif ()
 
-enable_testing()
 include_directories(codes)
 
 add_subdirectory(tests)
-
-add_executable(out main.cc)
