@@ -49,8 +49,3 @@ TEST(lc, 1115_Ten) {
     ASSERT_STREQ(str.c_str(), "foobarfoobarfoobarfoobarfoobar"
                               "foobarfoobarfoobarfoobarfoobar");
 }
-
-int main(int argc, char** argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}

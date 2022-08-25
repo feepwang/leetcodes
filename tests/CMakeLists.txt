@@ -1,9 +1,7 @@
 link_libraries(GTest::gtest_main)
 
-add_executable(1115 1115.print_foobar_alternatively_test.cc)
-add_executable(1455 1455.Check_If_a_Word_Occurs_As_a_Prefix_of_Any_Word_in_a_Sentence.cc)
-add_executable(1460 1460.Make_Two_Arrays_Equal_by_Reversing_Sub-arrays.cc)
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR} TEST_SOURCE)
+add_executable(tests
+        ${TEST_SOURCE})
 
-gtest_add_tests(TARGET 1115)
-gtest_add_tests(TARGET 1455)
-gtest_add_tests(TARGET 1460)
+gtest_discover_tests(tests)

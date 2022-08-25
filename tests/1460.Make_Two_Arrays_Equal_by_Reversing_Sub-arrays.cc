@@ -21,8 +21,3 @@ TEST(lc, 1460) {
     std::vector<int> t4{1, 2, 2, 3}, a4{1, 1, 2, 3};
     ASSERT_TRUE(sol.canBeEqual(t4, a4) == false);
 }
-
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest();
-    return RUN_ALL_TESTS();
-}

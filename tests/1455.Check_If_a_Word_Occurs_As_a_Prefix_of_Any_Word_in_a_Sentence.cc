@@ -14,8 +14,3 @@ TEST(lc, 1455) {
     ASSERT_EQ(sol.isPrefixOfWord("i am tired", "you"), -1);
     ASSERT_EQ(sol.isPrefixOfWord("b bu bur burg burger", "burg"), 4);
 }
-
-int main(int argc, char **argv){
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
