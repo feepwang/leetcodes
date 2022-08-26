@@ -4,7 +4,7 @@
 
 #include <gtest/gtest.h>
 
-#include "1115.Print_FooBar_Alternatiely.hpp"
+#include "1115.Print_FooBar_Alternatiely.h"
 
 using std::endl;
 using std::string;
