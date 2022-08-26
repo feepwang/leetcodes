@@ -9,7 +9,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 include(CTest)
 
 find_package(GTest QUIET)
-if (NOT ${GTest_FOUND})
+if (NOT GTest_FOUND)
     message(STATUS "GTest NOT FOUND IN SYSTEM ENVIRONMENT")
     include(FetchContent)
     FetchContent_Declare(
