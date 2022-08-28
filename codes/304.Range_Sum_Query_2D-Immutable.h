@@ -11,9 +11,9 @@
  * of the elements of matrix inside the rectangle defined by its upper left
  * corner (row1, col1) and lower right corner (row2, col2).
  *
- * À´Ô´£ºÁ¦¿Û£¨LeetCode£©
- * Á´½Ó£ºhttps://leetcode-cn.com/problems/range-sum-query-2d-immutable
- * Öø×÷È¨¹éÁì¿ÛÍøÂçËùÓĞ¡£ÉÌÒµ×ªÔØÇëÁªÏµ¹Ù·½ÊÚÈ¨£¬·ÇÉÌÒµ×ªÔØÇë×¢Ã÷³ö´¦¡£
+ * æ¥æºï¼šåŠ›æ‰£ï¼ˆLeetCodeï¼‰
+ * é“¾æ¥ï¼šhttps://leetcode-cn.com/problems/range-sum-query-2d-immutable
+ * è‘—ä½œæƒå½’é¢†æ‰£ç½‘ç»œæ‰€æœ‰ã€‚å•†ä¸šè½¬è½½è¯·è”ç³»å®˜æ–¹æˆæƒï¼Œéå•†ä¸šè½¬è½½è¯·æ³¨æ˜å‡ºå¤„ã€‚
  */
 
 #ifndef LC_SOLUTION_HPP_

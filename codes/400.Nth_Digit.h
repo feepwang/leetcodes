@@ -3,9 +3,9 @@
  * Given an integer n, return the nth digit of the infinite integer sequence [1,
  * 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...]
  *
- * À´Ô´£ºÁ¦¿Û£¨LeetCode£©
- * Á´½Ó£ºhttps://leetcode-cn.com/problems/nth-digit
- * Öø×÷È¨¹éÁì¿ÛÍøÂçËùÓĞ¡£ÉÌÒµ×ªÔØÇëÁªÏµ¹Ù·½ÊÚÈ¨£¬·ÇÉÌÒµ×ªÔØÇë×¢Ã÷³ö´¦¡£
+ * æ¥æºï¼šåŠ›æ‰£ï¼ˆLeetCodeï¼‰
+ * é“¾æ¥ï¼šhttps://leetcode-cn.com/problems/nth-digit
+ * è‘—ä½œæƒå½’é¢†æ‰£ç½‘ç»œæ‰€æœ‰ã€‚å•†ä¸šè½¬è½½è¯·è”ç³»å®˜æ–¹æˆæƒï¼Œéå•†ä¸šè½¬è½½è¯·æ³¨æ˜å‡ºå¤„ã€‚
  */
 
 #ifndef LC_SOLUTION_HPP_
@@ -22,17 +22,17 @@ class Solution {
    private:
     int findNthDigit(int n) {
         int digit = 1;
-        //  ·ÀÖ¹Òç³ö
-        //  count ´ú±íµ±Ç°Î»ÊıËùÊ¹ÓÃµÄÊıµÄÎ»ÊıºÍ, start ´ú±íµ±Ç°Î»µÄµÚÒ»¸öÊı
+        //  é˜²æ­¢æº¢å‡º
+        //  count ä»£è¡¨å½“å‰ä½æ•°æ‰€ä½¿ç”¨çš„æ•°çš„ä½æ•°å’Œ, start ä»£è¡¨å½“å‰ä½çš„ç¬¬ä¸€ä¸ªæ•°
         unsigned count = 9, start = 1;
         while (count < n) {
-            // n-count ÊÇÊ£ÓàµÄÎ»Êı
+            // n-count æ˜¯å‰©ä½™çš„ä½æ•°
             n -= count;
             ++digit;
             start *= 10;
             count = digit * 9 * start;
         }
-        //  
+        //
         start += (n - 1) / digit;
         return std::to_string(start)[(n - 1) % digit] - '0';
     }
