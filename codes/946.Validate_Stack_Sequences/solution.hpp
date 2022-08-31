@@ -18,18 +18,17 @@ class Solution {
 
     // function()
     bool validateStackSequences(vector<int>& pushed, vector<int>& popped) {
-        stack<int> stk;
-
-        int i = 0, sz = popped.size();
-        for (const auto& a : pushed) {
-            stk.push(a);
-            while (i < sz && stk.top() == popped[a]) {
-                i++;
-                stk.pop();
+        int n = pushed.size();
+        int i = 0;
+        std::stack<int> s;
+        for (int p : pushed) {
+            s.push(p);
+            while (!s.empty() && s.top() == popped[i]) {
+                s.pop();
+                ++i;
             }
         }
-
-        return i == sz;
+        return i == n;
     }
 };
 
