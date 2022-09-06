@@ -24,31 +24,37 @@
 
 #include <functional>
 #include <mutex>
+#include <condition_variable>
 
 class Foo {
-   public:
-    Foo() : lock_1(mtx_1, std::try_to_lock), lock_2(mtx_2, std::try_to_lock) {}
+public:
+    Foo() {}
 
     void first(std::function<void()> printFirst) {
         // printFirst() outputs "first". Do not change or remove this line.
         printFirst();
-        lock_1.unlock();
+        flag_second = true;
+        cond_second.notify_one();
     }
 
     void second(std::function<void()> printSecond) {
+        std::unique_lock<std::mutex> lck{ mtx_second };
+        cond_second.wait(lck, [this]() {return flag_second == true;});
         // printSecond() outputs "second". Do not change or remove this line.
-        std::lock_guard<std::mutex> guard(mtx_1);
         printSecond();
-        lock_2.unlock();
+        flag_third = true;
+        cond_third.notify_one();
     }
 
     void third(std::function<void()> printThird) {
         // printThird() outputs "third". Do not change or remove this line.
-        std::lock_guard<std::mutex> guard(mtx_2);
+        std::unique_lock<std::mutex> lck(mtx_third);
+        cond_third.wait(lck, [this]() {return flag_third;});
         printThird();
     }
 
-   private:
-    std::mutex mtx_1, mtx_2;
-    std::unique_lock<std::mutex> lock_1, lock_2;
+private:
+    std::mutex mtx_second, mtx_third;
+    std::condition_variable cond_second, cond_third;
+    bool flag_second = false, flag_third = false;
 };
